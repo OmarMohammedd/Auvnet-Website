@@ -1,0 +1,134 @@
+.ourinitiallll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ourinitiallll .join_us {
+  max-width: 40%;
+  position: absolute;
+  top: -2rem;
+  right: 106px;
+}
+
+.ourinitiallll .background-img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.ourinitiallll p {
+  color: #fff;
+  width: 80%;
+  margin-top: 1.5rem;
+  font-size: 17px;
+  font-family: Montserrat;
+  font-weight: 400;
+  line-height: 40px;
+}
+
+.ourinitiallll h1 {
+  color: #fff;
+  font-size: 70px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: start;
+  margin-top: 8rem;
+}
+
+.ourinitiallll h1 span {
+  white-space: nowrap;
+}
+
+.ourinitiallll .main-container button {
+  color: #fff;
+  background: #41CBBF;
+  padding: 7px 30px;
+  border-radius: 30px;
+  border: 1px solid #41CBBF;
+  position: absolute;
+  bottom: 3.4rem;
+  right: 106px;
+  box-shadow: 0px 0px 35px #41CBBF;
+}
+.arrowright {
+  font-size: 15px;
+}
+
+@media (max-width: 992px) {
+  .ourinitiallll .join_us {
+    display: none;
+  }
+  .ourinitiallll h1 span:first-of-type {
+    display: none;
+  }
+  .ourinitiallll h1 {
+    font-size: 57px;
+    text-align: center;
+    margin-top: 6rem;
+  }
+  .ourinitiallll p {
+    width: 100%;
+    margin-top: 1rem;
+    font-size: 17px;
+    line-height: 35px;
+    text-align: center;
+  }
+  .ourinitiallll .main-container button {
+    position: relative;
+    display: inline-block;
+    padding: 7px 20px;
+    /* margin-top: 3rem; */
+    transform: translateX(-50%);
+    left: 50%;
+    bottom: 2%;
+  }
+}
+@media (max-width: 600px) {
+  .ourinitiallll h1 {
+    font-size: 45px;
+    margin-top: 6rem;
+  }
+  .ourinitiallll p {
+    margin-top: 0.7rem;
+    font-size: 15px;
+    line-height: 33px;
+  }
+  .ourinitiallll .main-container button {
+    padding: 7px 14px;
+    margin-top: 3.3rem;
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .arrowright {
+    font-size: 22px;
+  }
+}
+@media (max-width: 480px) {
+  .ourinitiallll h1 {
+    font-size: 40px;
+    margin-top: 6rem;
+  }
+  .ourinitiallll p {
+    margin-top: 0.6rem;
+    font-size: 15px;
+    line-height: 28px;
+  }
+  .ourinitiallll .main-container button {
+    padding: 7px 14px;
+    margin-top: 0rem;
+  }
+}
+@media (max-width: 390px) {
+  .ourinitiallll p {
+    margin-top: 0.6rem;
+    font-size: 14px;
+    line-height: 25px;
+  }
+}

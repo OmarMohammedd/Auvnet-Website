@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="https://media.auvnet.com/auvnet/AUVNET%20Logo%20B.png" />
+    <meta name="msapplication-TileImage" content="image_url" />
+
+    <meta property="og:site_name" content="AUVNET" />
+    <meta
+      property="og:title"
+      content="AUVNET is a leading technology company that specializes in providing comprehensive design services and software development solutions"
+    />
+    <meta
+      property="og:description"
+      content="AUVNET is a leading technology company that specializes in providing comprehensive design services and software development solutions. With a strong focus on creativity, innovation, and technical expertise, we offer a wide range of services including UI/UX design, graphic design, logo design, AI development, website building, mobile app development, app security, desktop app development, and more. Our mission is to empower businesses and individuals with cutting-edge technology and captivating designs that drive growth and success in the digital world.
+      "
+    />
+
+    <meta
+      property="og:image"
+      itemprop="image"
+      content="https://media.auvnet.com/auvnet/AUVNET%20Logo%20B.png"
+    />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:image:type" content="image/png" />
+
+    <meta property="og:image:width" content="300" />
+    <meta property="og:image:height" content="300" />
+
+    <meta property="og:url" content="https://AUVNET.com/" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUVNET</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+
+    <script>
+      function getIpAddress() {
+        fetch("https://api.ipify.org?format=json")
+          .then((response) => response.json())
+          .then((data) => {
+            localStorage.setItem("ipAddress", data?.ip);
+          })
+          .catch((error) => {
+            console.error("Error fetching IP address:", error);
+          });
+      }
+
+      getIpAddress();
+    </script>
+  </body>
+</html>

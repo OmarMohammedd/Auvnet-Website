@@ -1,0 +1,272 @@
+.dachboard_1 .main-container {
+  max-width: 100%;
+  min-height: 100vh;
+  position: relative;
+  overflow: hidden;
+  background: #0b0b10;
+  padding-bottom: 4rem;
+}
+
+.circle {
+  width: 750px;
+  height: 750px;
+  /* width: 824px;
+  height: 824px; */
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(834px);
+  box-shadow: 834px 834px 834px;
+}
+
+.circle1 {
+  background: #41cbbf;
+  left: -30%;
+  top: -55%;
+}
+
+.circle2 {
+  background: #3b82f6;
+
+  left: 71%;
+  top: -65%;
+}
+
+.square {
+  width: 80px;
+  height: 80px;
+  background: #d9d9d9;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.top_dachboard {
+  text-align: center;
+  margin-bottom: 5rem;
+  cursor: pointer;
+}
+
+.website-name {
+  color: white;
+  font-size: 35px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-top: 0.6rem;
+}
+
+.top_dachboard img {
+  max-width: 100%;
+  margin-top: -2.5rem;
+}
+
+.css-tj5bde-Svg {
+  margin-top: 0;
+  fill: black !important;
+}
+.section_add_project {
+  background: #000000;
+  padding: 20px 40px;
+  margin-top: 0.5rem;
+  border-radius: 24px;
+  padding-bottom: 2rem;
+  z-index: 99999;
+}
+.section_add_project h3 {
+  color: white;
+  font-size: 35px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.dachboard_1 .select__control {
+  background-color: #d9d9d9 !important;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.dachboard_1 .select__multi-value {
+  background-color: black;
+}
+
+.dachboard_1 .select__multi-value__label {
+  color: white;
+  font-weight: bold;
+  font-size: 1rem;
+}
+.add_project {
+  display: flex;
+  align-items: start;
+  padding-top: 1rem;
+  justify-content: space-between;
+}
+
+.dachboard_1 img {
+  z-index: 9999999999999;
+}
+.add_project_left div .first_img {
+  z-index: 999;
+  max-width: 100%;
+  background: #d9d9d9;
+  padding: 20px 50px;
+  border-radius: 11px;
+}
+
+.add_project_right form {
+  display: flex;
+  flex-direction: column;
+  margin-top: -0.5rem;
+}
+.add_project_right form div label {
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+.add_project_right form div input {
+  width: 100%;
+  padding: 15px;
+  background: #d9d9d9;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+.add_project_right form div input::placeholder {
+  color: #000000;
+}
+
+@media (max-width: 920px) {
+  .section_add_project {
+    margin-top: 1.5rem;
+  }
+  .square {
+    margin-top: 5rem;
+  }
+  .add_project {
+    display: flex;
+    align-items: start;
+    padding-top: 1rem;
+    justify-content: space-between;
+    flex-direction: column;
+  }
+  .dachboard_1 .main-container {
+    height: auto;
+    padding-bottom: 4rem;
+  }
+  .add_project_left {
+    margin-top: 1rem;
+  }
+  .add_project_right form {
+    padding-top: 2.5rem;
+  }
+  .section_add_project {
+    padding-bottom: 2.5rem;
+  }
+}
+@media (max-width: 740px) {
+  .website-name {
+    font-size: 30px;
+    margin-top: 0.6rem;
+  }
+  .top_dachboard img {
+    margin-top: -2.5rem;
+  }
+
+  .section_add_project,
+  .add_project,
+  .add_project_right,
+  .add_project_right form,
+  .add_project_right form div textarea,
+  .add_project_right form div input {
+    width: 100%;
+  }
+  .section_add_project h3 {
+    font-size: 32px;
+    padding-top: 1rem;
+  }
+  .section_add_project {
+    padding-bottom: 3rem !important;
+  }
+  .section_project_bottom form button {
+    font-size: 24px !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .website-name {
+    font-size: 28px;
+    margin-top: 0.6rem;
+  }
+  .top_dachboard img {
+    margin-top: -2.8rem;
+  }
+  .section_add_project {
+    padding: 20px;
+  }
+
+  .section_project_bottom form button {
+    font-size: 20px !important;
+  }
+}
+@media (max-width: 530px) {
+  .visitors-counter {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    top: 5rem;
+  }
+  .section_project_bottom form button {
+    font-size: 19px !important;
+  }
+}
+
+#colorPicker {
+  padding: 0;
+  border-radius: 1rem !important;
+  width: 50px;
+}
+
+.dachboard_1 button {
+  background-color: var(--primary-color);
+  color: #000;
+  font-size: 16px;
+  width: 250px;
+  text-align: center;
+}
+
+.new-add-project-form {
+  display: flex;
+  flex-direction: row !important;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.new-add-project-form > div {
+  width: 100%;
+}
+
+.add-project-btns {
+  display: flex;
+  margin-left: auto;
+  gap: 2rem;
+  width: fit-content;
+}
+.add-project-btns > button {
+  width: fit-content;
+  border: 1px;
+  border-radius: 9px;
+  font-size: 17px;
+  font-weight: 500;
+  color: var(--primary-color);
+  padding: 4px 24px;
+  cursor: pointer;
+  
+}
+
+.add-project-btns button:first-child {
+  background-color: #41CBBF33;
+  border-color: var(--main-green);
+}
+.add-project-btns button:last-child {
+  background-color: #3B82F633;
+  border-color: var(--main-blue);
+}

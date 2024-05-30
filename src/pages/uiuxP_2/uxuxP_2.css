@@ -1,0 +1,367 @@
+.uiux {
+  min-height: 100vh;
+  overflow: hidden;
+  width: 100vw;
+  padding-top: 3rem;
+}
+.uiux .main-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+  z-index: 2;
+  align-items: center;
+}
+.uiux_left,
+.uiuuxx_right {
+  flex: 1;
+}
+.uiux_left {
+  background-image: url("/src/assets/Group 15.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.uiux_left h3 {
+  color: white;
+  font-size: 40px;
+    font-style: italic;
+  font-weight: 400;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+.inputt_1 {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0;
+}
+
+.inputt_1 label {
+  color: white;
+  font-size: 17px;
+  padding-bottom: 7px;
+}
+
+.input {
+  padding: 10px;
+  background: #A2A2A240;;
+  border-radius: 8px;
+  border: 1px solid white;
+  width: 40%;
+  color: #fffcfc;
+}
+.input::placeholder {
+  color: #fffcfcb3;
+}
+.parent_input {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.parent_input .inputt_1:first-of-type .input {
+  width: 100% ;
+}
+.parent_input .inputt_1:last-of-type .input {
+  width: 88% ;
+}
+.uiux_left .textarea {
+  padding: 10px 15px;
+  background: #A2A2A240;;
+  border-radius: 8px;
+  border: 1px solid white;
+  color: #fffcfc;
+  width: 60%;
+  min-height: 200px;
+
+}
+.uiux_left .textarea::placeholder {
+  color: #fffcfcb3;
+}
+
+.uiuuxx_right p {
+  font-size: 12px;
+  margin-top: 10px;
+    font-weight: 700;
+}
+.uiuuxx_right .imageee {
+  position: relative;
+}
+.uiuuxx_right .imageee div {
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #b8b8b8;
+  padding: 0px 0 0 25px;
+  border-radius: 50px;
+}
+.uiuuxx_right .imageee div span {
+  background: #000000;
+  border: 5px solid white;
+  padding: 10px;
+  border-radius: 50%;
+}
+
+.uiuuxx_right .iimmgg img:first-of-type {
+  max-width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.uiuuxx_right img:last-of-type {
+  max-width: 50%;
+}
+.imageee .iimmgg {
+  position: relative;
+}
+.imageee .iimmgg .immgg {
+  position: absolute;
+  right: 0;
+  top: 4.5rem;
+  z-index: -4;
+}
+.uiuuxx_right .imageee div p {
+    white-space: nowrap;
+    cursor: pointer;
+    color: white;
+ }
+
+
+
+.uiuuxx_right .imageee div:last-of-type {
+  position: absolute;
+  bottom: 0%;
+  right: 5%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #41CBBF;
+  padding: 0px 0 0 25px;
+  border-radius: 50px;
+  margin-right: 18rem;
+ }
+
+ .uiuuxx_right .imageee  .BsLightningFill {
+  color: #41CBBF;
+  font-size: 54px;
+}
+.uiuuxx_right .imageee .MdKeyboardArrowRight {
+  font-size: 54px;
+}
+
+
+ @media screen and (max-width: 1130px) {
+.uiuuxx_right .imageee div:last-of-type {
+    bottom: -27%;
+    margin-right: 0rem;
+   }
+   .uiuuxx_right .imageee div {
+    bottom: -3%;
+  }
+}
+
+/* responsive */
+@media screen and (max-width: 992px) {
+
+  .uiuuxx_right .imageee {
+    margin-bottom: 1rem !important;
+   }
+
+  .uiuuxx_right .imageee div {
+    display: none;
+  }
+  .uiuuxx_right .imageee div:last-of-type {
+      display: none;
+  }
+
+  .uiux {
+    overflow-y: auto;
+  }
+  .uiux .main-container {
+    flex-direction: column;
+    margin-top: 8rem !important;
+  }
+  .uiuuxx_right .imageee {
+    margin-top: 0rem;
+  }
+  .input {
+    width: 100%;
+  }
+  .uiux_left .textarea {
+    width: 100%;
+  }
+  .parent_input .inputt_1:last-of-type .input {
+    width: 100% ;
+  }
+
+  .uiuuxx_right .imageee div:last-of-type {
+    bottom: -19%;
+    margin-right: 0rem;
+   }
+   .uiuuxx_right .imageee {
+    margin-bottom: 11rem;
+   }
+
+}
+@media screen and (max-width: 700px) {
+  .uiuuxx_right h3 {
+    font-size: 35px;
+  }
+  .uiuuxx_right .imageee {
+    margin-top: -1.5rem;
+  }
+  .uiux_left h3 {
+    white-space: wrap;
+  }
+
+  .uiuuxx_right .imageee div:last-of-type {
+    bottom: -23%;
+    margin-right: 0rem;
+   }
+}
+@media screen and (max-width: 530px) {
+  .uiuuxx_right h3 {
+    font-size: 30px;
+  }
+  .uiuuxx_right .imageee {
+    margin-top: -1.5rem;
+  }
+  .uiuuxx_right .imageee div {
+    bottom: -10%;
+  }
+  .uiuuxx_right p {
+    font-size: 10px;
+    margin-top: 15px;
+  }
+  .uiuuxx_right .imageee div {
+    bottom: -5%;
+    right: 5%;
+    gap: 1rem;
+    padding: 0px 0 0 22px;
+  }
+  .uiuuxx_right .imageee div span {
+    border: 4px solid white;
+    /* padding: 1px; */
+  }
+  .arrow_right {
+    padding: 1px;
+  }
+
+  .uiuuxx_right .imageee div:last-of-type {
+    bottom: -25%;
+    margin-right: 0rem;
+   }
+   .uiuuxx_right .imageee  .BsLightningFill {
+    font-size: 42px;
+  }
+  .uiuuxx_right .imageee .MdKeyboardArrowRight {
+    font-size: 42px;
+  }
+
+}
+@media screen and (max-width: 444px) {
+  .uiuuxx_right .imageee {
+    margin-top: -1.5rem;
+  }
+  .uiuuxx_right .imageee div {
+    bottom: -8%;
+  }
+  .uiuuxx_right .imageee {
+    margin-bottom: 13rem;
+  }
+
+  .uiuuxx_right .imageee div:last-of-type {
+    bottom: -37%;
+    margin-right: 0rem;
+   }
+}
+@media (max-width:360px) {
+  .uiuuxx_right .imageee div:last-of-type {
+    bottom: -58%;
+    margin-right: 0rem;
+   }
+   .uiuuxx_right .imageee div {
+    bottom: -20%;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width: 700px)  {
+  .uiuuxx_right .imageee {
+    margin-top: -2rem;
+   }
+}
+
+@media screen and (max-width: 600px) {
+  .uiuuxx_right .imageee {
+    margin-bottom: -1rem !important;
+   }
+}
+
+@media screen and (max-width: 630px) {
+  .uiux_left h3 {
+    font-size: 30px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .uiuuxx_right .imageee {
+    margin-top: -1rem;
+   }
+}
+
+
+.parent_top_formm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.parent_buttonsss {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.parent_top_formm button {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 10px;
+  font-weight: 500;
+  width: 80px;
+  height: 40px;
+  color: white ;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #41CBBF ;
+}
+.parent_top_formm .contact_buttonn {
+  background: #41CBBF ;
+}
+.parent_top_formm .send_buttonn {
+  background: #D9D9D9;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 992px) {
+  .parent_top_formm button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .uiux_left h3 {
+    font-size: 25px !important;
+  }
+  .parent_top_formm {
+    gap: 0.7rem;
+  }
+  .parent_buttonsss {
+    gap: 0.4rem;
+  }
+}

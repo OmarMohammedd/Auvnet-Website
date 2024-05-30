@@ -1,0 +1,148 @@
+.noprojects .main-container {
+  height: 100%;
+  width: 100%;
+  background-color: #000000;
+  overflow: hidden;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.noprojects .main-container img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  margin-top: 6.5rem;
+}
+.noprojects .main-container h1 {
+  font-size: 40px;
+  color: white;
+  font-weight: 600;
+  text-align: center;
+  /* padding-top: 1.5rem; */
+  z-index: 99;
+}
+
+.custom-gradient {
+  width: 892px;
+  height: 892px;
+  background: linear-gradient(180deg, #3b82f6 0%, #1ead98 100%);
+  border-radius: 50%;
+  position: absolute;
+  bottom: -90%;
+  left: 50%;
+  transform: translate(-50%);
+  /* margin-bottom: -50rem; */
+}
+
+.circle_1 {
+  width: 43px;
+  height: 43px;
+  background: linear-gradient(180deg, #3b82f6 0%, #1ead98 100%);
+  border-radius: 9999px;
+  position: absolute;
+  top: 28%;
+  left: 25%;
+}
+.circle_2 {
+  width: 43px;
+  height: 43px;
+  background: linear-gradient(180deg, #3b82f6 0%, #1ead98 100%);
+  border-radius: 9999px;
+  position: absolute;
+  /* bottom: 10rem;
+  left: 22rem; */
+  bottom: 20%;
+  left: 22%;
+}
+.circle_3 {
+  width: 90px;
+  height: 90px;
+  background: linear-gradient(180deg, #3b82f6 0%, #1ead98 100%);
+  border-radius: 9999px;
+  position: absolute;
+  /* top: 8rem;
+  right: 16rem; */
+  top: 20%;
+  right: 16%;
+}
+.circle_4 {
+  width: 120px;
+  height: 120px;
+  background: linear-gradient(180deg, #3b82f6 0%, #1ead98 100%);
+  border-radius: 9999px;
+  position: absolute;
+  /* bottom: 8rem;
+  right: 10rem; */
+  bottom: 8%;
+  right: 8%;
+  transform: rotate(82.76deg);
+  transform-origin: 0 0;
+}
+@media (max-width: 1024px) {
+  .circle_4 {
+    display: none;
+  }
+  .circle_2 {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .custom-gradient {
+    width: 700px;
+    height: 700px;
+    bottom: -60%;
+  }
+
+  .circle_3 {
+    width: 80px;
+    height: 80px;
+    top: 20%;
+    right: 5%;
+  }
+  .circle_1 {
+    left: 10%;
+  }
+  .noprojects .main-container h1 {
+    font-size: 32px;
+  }
+}
+@media (max-width: 500px) {
+  .custom-gradient {
+    width: 140%;
+    height: 70%;
+    bottom: -33%;
+  }
+
+  .noprojects .main-container img {
+    margin-top: 8rem;
+  }
+
+  .circle_3 {
+    width: 60px;
+    height: 60px;
+    top: 20%;
+    right: 5%;
+  }
+  .circle_1 {
+    left: 5%;
+  }
+  .noprojects .main-container h1 {
+    font-size: 28px;
+  }
+}
+@media (max-width: 380px) {
+  .noprojects .main-container img {
+    margin-top: 7rem;
+  }
+  .circle_3 {
+    right: 1.4%;
+  }
+  .circle_1 {
+    left: 1.4%;
+  }
+  .noprojects .main-container h1 {
+    font-size: 25px;
+  }
+}

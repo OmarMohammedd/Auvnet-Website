@@ -1,0 +1,246 @@
+.courses {
+  max-width: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  min-height: 100vh;
+  background: #202020;
+  padding-bottom: 5rem;
+}
+
+.courses .main-container {
+  display: flex;
+  align-items:stretch;
+  justify-content: space-between;
+  margin-top: 7rem;
+  background: #202020;
+  color: #ffffff;
+  gap: 3rem;
+}
+.courses_left {
+  min-width: 35%;
+  max-width: 35%;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+.courses_right {
+  min-width: 65%;
+  max-width: 65%;
+}
+.courses .main-container .iimagee::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+}
+.courses .main-container .iimagee {
+  overflow-y: auto;
+  display: flex;
+  white-space: "nowrap";
+}
+
+.courses_left .p_our_courses {
+  color: white;
+font-size: 18px;
+font-weight: 400;
+line-height: 45px;
+
+}
+.courses_left span {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  opacity: 0.5;
+  margin-top: 1rem !important;
+}
+.courses_left .courses_left_div {
+  display: flex;
+  align-items: end;
+  gap: 0.8rem;
+}
+.courses_left .courses_left_div .div_courses {
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 50px;
+}
+.courses_left .courses_left_div .div_mode {
+  color: #3b82f6;
+  font-size: 25px;
+  font-weight: 700;
+  
+}
+.courses_left button {
+  border: none;
+  outline: none;
+  background: #000000;
+  color: #ffffff;
+  padding: 15px 50px;
+  margin-top: 1.5rem;
+  border-radius: 37px;
+  font-size: 25px;
+  position: relative;
+}
+
+
+
+.courses_right_top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.courses_right_top div:first-of-type {
+  display: flex;
+  align-items: center;
+}
+.courses_right_top .move_your {
+  color: white;
+  font-size: 15px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.courses_right_top .click_to {
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+}
+
+.iimagee {
+  display: flex;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+.iimagee img {
+  border-radius: 15px;
+  cursor: pointer;
+  object-fit: cover;
+  height: 722px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1)
+}
+.see-our-courses-btn .before {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background-color: var(--main-blue);
+  border-radius: 37px;
+  transition: all 1s linear;
+  opacity: 0;
+  box-shadow: 0px 0px 0px 0px #ffffff;
+}
+.see-our-courses-btn div {
+  position: relative;
+  z-index: 2;
+  text-transform: uppercase;
+}
+
+.see-our-courses-btn .before.active {
+  width: 100%;
+  opacity: 1;
+  box-shadow: 0px 0px 15px 0px #ffffff;
+}
+
+.iimagee > div {
+  position: relative;
+}
+
+.iimagee .details {
+  position: absolute;
+  z-index: 1;
+  bottom: 5%;
+  padding: 0 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.iimagee .details h5 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 0;
+  padding-bottom: 0;
+  text-transform: uppercase;
+  position: relative;
+  transition: all 1s linear;
+  position: relative;
+}
+
+.iimagee .details span {
+  font-size: 10px;
+  font-weight: 700;
+  margin-top: 0;
+  display: block;
+  padding-top: 0;
+  display: block;
+}
+
+.iimagee .right-det span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #000000;
+  height: 21px;
+  top: 616px;
+  left: 216px;
+  border-radius: 12.5px;
+  background-color: #d9d9d9;
+}
+
+.img-arrow {
+  font-size: 20px;
+  transition: all 1s linear;
+}
+
+.img-arrow.active {
+  font-size: 40px !important;
+  transition: all 1s linear;
+}
+
+
+@media (max-width:1420px) {
+  .courses_left .courses_left_div .div_courses {
+    font-size: 45px;
+  }
+  .courses_left .courses_left_div .div_mode {
+    font-size: 22px;
+    
+  }
+  .courses_left button {
+    padding: 12px 40px;
+    font-size: 22px;
+  }
+  
+  
+}
+@media (max-width:1250px) {
+  .courses_left .courses_left_div .div_courses {
+    font-size: 40px;
+  }
+  .courses_left .courses_left_div .div_mode {
+    font-size: 19px;
+    
+  }
+  .courses_left button {
+    padding: 10px 35px;
+    font-size: 19px;
+  }
+  
+  
+}
+@media (max-width:1130px) {
+  .courses_left .courses_left_div .div_courses {
+    font-size: 35px;
+  }
+  .courses_left .courses_left_div .div_mode {
+    font-size: 17px;
+    
+  }
+  .courses_left button {
+    padding: 10px 30px;
+    font-size: 17px;
+  }
+  
+  
+}

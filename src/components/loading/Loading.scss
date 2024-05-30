@@ -1,0 +1,23 @@
+.image-slider {
+    position: relative;
+    background-color: #202020;
+    min-height: 100vh;
+  
+  }
+  
+  .loading-background-img{
+    position: absolute;
+    transform: translate(-50% , -50%);
+    width: 200px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% , -50%);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center center;
+    transition: all 0.4s linear;
+  }
+  
+  
+  

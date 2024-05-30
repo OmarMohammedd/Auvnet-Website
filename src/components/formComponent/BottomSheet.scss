@@ -1,0 +1,49 @@
+.bottom-sheet .textarea {
+  padding: 10px 15px;
+  background: #A2A2A240;;
+  border-radius: 8px;
+  border: 1px solid black;
+  color: #fffcfc;
+  width: 60%;
+  @media (max-width: 992px) {
+    width: 100%;
+  }
+}
+.bottom-sheet .textarea::placeholder {
+  color: #fffcfcb3;
+}
+
+.tools-list-sm {
+  width: 70%;
+  margin-left: 15%;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  img {
+    width: 26px;
+    height: 26px;
+    object-fit: cover;
+  }
+  span {
+    font-weight: 500;
+    font-size: 13px;
+    color: black;
+  }
+}
+.tools-list {
+  width: 90%;
+  margin-left: 5%;
+  border-radius: 0.5rem;
+  padding: 0.5rem 2rem;
+  img {
+    width: 26px !important;
+    height: 26px !important;
+    object-fit: cover;
+  }
+  span {
+    font-weight: 500;
+    font-size: 13px;
+    color: black !important;
+  }
+}
+
+

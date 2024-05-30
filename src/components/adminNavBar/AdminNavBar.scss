@@ -1,0 +1,103 @@
+.navbbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 2.1rem;
+  position: relative;
+  z-index: 10000;
+}
+.navbbar_left {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.visitors-counter {
+  opacity: 0.5;
+  text-align: center;
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.project-management {
+  text-align: center;
+  color: white;
+  opacity: 0.5;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+.year {
+  text-align: right;
+  color: white;
+  font-size: 20px;
+  font-style: italic;
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+li {
+  list-style: none;
+}
+.project-management {
+  position: relative;
+  z-index: 1000;
+}
+ul.boxx {
+  display: none;
+  color: #fff;
+  position: absolute;
+  background: #fff;
+  opacity: 0.5;
+  right: -50px;
+  top: 31px;
+  z-index: 5;
+  border-radius: 10px;
+}
+.boxx {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0;
+  padding: 2px;
+  position: relative;
+  margin-top: 0.2rem;
+}
+.boxx::before {
+  content: "\A";
+  border-style: solid;
+  border-width: 10px 15px 10px 0;
+  border-color: transparent #fff transparent transparent;
+  position: absolute;
+  top: -13px;
+  left: 42%;
+  transform: rotate(90deg);
+  border-radius: 10px;
+}
+.boxx li {
+  display: list-item;
+  padding: 5px 10px;
+  color: #000000;
+  margin: 0 3px;
+  transition: 0.2s;
+  font-size: 13px;
+  z-index: 99999;
+}
+.boxx li:hover {
+  /* color: #ffffff; */
+  cursor: pointer;
+}
+
+.menu:hover + ul.boxx,
+ul.boxx:hover {
+  display: block;
+}
+.menu {
+  cursor: pointer;
+  z-index: 99999;
+}

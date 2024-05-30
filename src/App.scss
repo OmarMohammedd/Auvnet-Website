@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800;900&display=swap");
+@import "bootstrap/dist/css/bootstrap.min.css";
+html {
+  font-family: Montserrat, sans-serif;
+  scroll-behavior: smooth;
+}
+:root {
+  --primary-color: #ffffff;
+  --main-blue: #3b82f6;
+  --main-green: #41cbbf;
+  --main-black: #040506;
+  --background-color: #0b0b10;
+  --semi-white: #c5c5c5;
+  --border-navbar: #ffffff50;
+
+  [data-theme="dark"] {
+    --border-navbar: #c5c5c5;
+    --primary-color: #000000;
+  }
+}
+
+input:focus {
+  outline: none;
+}
+body {
+  background-color: var(--main-black);
+}
+.modal {
+  backdrop-filter: blur(3px);
+  padding-left: 0 !important;
+}
+.bottomSheat-present {
+  backdrop-filter: blur(20px);
+  background: linear-gradient(
+    180deg,
+    rgba(25, 25, 25, 0.8) 0%,
+    rgba(175, 25, 94, 0.8) 100%
+  );
+
+  h1 {
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--primary-color);
+    text-transform: capitalize;
+    margin-top: 1rem;
+  }
+
+  span {
+    color: var(--primary-color);
+  }
+}
+.main-container {
+  padding-left: 106px;
+  padding-right: 106px;
+}
+
+@media (max-width: 1200px) {
+  .main-container {
+    padding-left: 79.5px;
+    padding-right: 79.5px;
+  }
+}
+@media (max-width: 992px) {
+  .main-container {
+    padding-left: 53px;
+    padding-right: 53px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-container {
+    padding-left: 26.5px;
+    padding-right: 26.5px;
+  }
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.main-btn {
+  border-radius: 40px;
+  color: var(--primary-color);
+  text-align: center;
+  padding: 9.6px 80px;
+  background-color: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.card-exp {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.card-exp:hover {
+  transform: rotate(3deg);
+}
+
+::selection {
+  background-color: var(--main-green);
+  color: var(--primary-color);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: var(--background-color); /* Color of the scrollbar track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color); /* Color of the scrollbar handle */
+  border-radius: 16px;
+}
+
+.css-4xgw5l-IndicatorsContainer2 {
+  height: 100%;
+}
+
+.css-w9q2zk-Input2 {
+  max-height: 35px;
+}
+
+.css-1dimb5e-singleValue {
+  position: absolute;
+  top: 30%;
+  color: white !important;
+}
+
+.sm-screen-hide {
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.sm-screen-show {
+  display: none;
+  @media (max-width: 992px) {
+    display: block;
+  }
+}
+
+.mobile-screen-hide {
+  display: block;
+  @media (max-width: 768px) {
+    display: none;
+  }
+}
+
+.mobile-screen-show {
+  display: none;
+  @media (max-width: 768px) {
+    display: block;
+  }
+}
+
+.css-zaooh0-control {
+  min-width: 100% !important;
+  max-width: 100% !important;
+}
+
+li {
+  list-style: disc;
+}
+
+.services-hide {
+  display: none;
+  overflow: hidden;
+  @media (max-width: 992px) {
+    display: block;
+  }
+}
+.services-show {
+  display: block;
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.Toastify__toast-container--bottom-center {
+  z-index: 10000000 !important;
+}
+
+.react-modal-sheet-backdrop {
+  opacity: 0 !important;
+}
+
+.hovered-btn {
+  transition: all 0.3s linear;
+  &:hover {
+    transition: all 0.3s linear;
+    background-color: var(--main-green);
+  }
+}
+
+.spinner-div {
+  width: 100%;
+  height: 65vh;
+}
+
+.css-1xc3v61-indicatorContainer {
+  .css-tj5bde-Svg {
+    fill: #ffffff !important;
+  }
+}
+
+.send-black-color {
+  color: #17253b !important;
+}
+
+.background-service-txt {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  font-style: italic;
+  font-weight: 900;
+  opacity: 0.04;
+  bottom: 0;
+  justify-content: center;
+}
+
+.background-service-txt.graphic-design {
+  font-size: 250px;
+  bottom: 0;
+  line-height: 204.75px;
+
+  @media (max-width: 768px) {
+    font-size: 150px;
+    bottom: -40px;
+  }
+}
+
+.background-service-txt.uiux-service {
+  font-size: 427px;
+  line-height: 345.83px;
+  position: absolute;
+
+  @media (max-width:768px) {
+    font-size: 275px;
+    bottom: -40px;
+  }
+}
+
+.background-service-txt.ai {
+  font-size: 427px;
+  @media (max-width:768px) {
+    font-size: 325px;
+  }
+}

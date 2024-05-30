@@ -1,0 +1,356 @@
+.uiux {
+  min-height: 100vh;
+  overflow: hidden;
+  padding-top: 3rem;
+
+  width: 100vw;
+}
+.uiux .main-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+  z-index: 2;
+  align-items: center;
+}
+.uiux_lef,
+.uiux_righ {
+  flex: 1;
+}
+.uiux_lef h3 {
+  color: white;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+.inputt_1 {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0;
+}
+
+.inputt_1 label {
+  color: #ffffff;
+  font-size: 17px;
+  padding-bottom: 7px;
+}
+
+.input {
+  padding: 10px;
+  background: #A2A2A240;;
+  border-radius: 8px;
+  border: 1px solid white;
+  width: 40%;
+  color: #fffcfc;
+}
+.input::placeholder {
+  color: #fffcfcb3;
+}
+.parent_input {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.parent_input .inputt_1:first-of-type .input {
+  width: 100% ;
+}
+.parent_input .inputt_1:last-of-type .input {
+  width: 88% ;
+}
+.uiux_lef .textarea {
+  padding: 10px 15px;
+  background: #A2A2A240;;
+  border-radius: 8px;
+  border: 1px solid white;
+  color: #fffcfc;
+  width: 75% !important;
+  min-height: 150px ;
+}
+.uiux_lef .textarea::placeholder {
+  color: #fffcfcb3;
+}
+
+.uiux_righ p {
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: 700;
+}
+.uiux_righ .image {
+  position: relative;
+}
+.uiux_righ .image div:first-of-type  {
+  position: absolute;
+  bottom: -25%;
+  right: 10%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #b8b8b8;
+  padding: 0px 0 0 25px;
+  border-radius: 50px;
+}
+.uiux_righ .image div span {
+  background: #000000;
+  border: 5px solid white;
+  padding: 10px;
+  border-radius: 50%;
+}
+.uiux_righ img {
+  max-width: 100%;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.arrow_right {
+  padding: 20px;
+}
+.uiux_righ .image div p {
+  white-space: nowrap;
+  cursor: pointer;
+  color: #ffffff;
+ }
+
+
+
+
+
+
+.uiux_righ .image div:last-of-type {
+  position: absolute;
+  bottom: -25%;
+  right: 20%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #41CBBF;
+  padding: 0px 0 0 25px;
+  border-radius: 50px;
+  margin-right: 16rem;
+ }
+
+ .uiux_righ .image  .BsLightningFill {
+  color: #41CBBF;
+  font-size: 54px;
+}
+.uiux_righ .image .MdKeyboardArrowRight {
+  font-size: 54px;
+}
+
+@media screen and (max-width: 1270px) {
+  .uiux_righ .image div:last-of-type {
+      margin-right: 0rem;
+      bottom: -68%;
+      right: 20%;
+     }
+     .uiux_righ .image div:first-of-type  {
+      bottom: -33%;
+      right: 20%;
+    }
+}
+
+/* responsive */
+@media screen and (max-width: 992px) {
+
+    
+   .uiux_righ .image  {
+    margin-bottom: 1rem !important;
+   }
+
+    .uiux_righ .image div:first-of-type , 
+    .uiux_righ .image div:last-of-type {
+    display: none ;
+  }
+  /* .uiux_lef {
+    margin-top: 4rem;
+  } */
+
+
+
+  .uiux_righ img {
+    max-width: 77%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .uiux_righ .image {
+    margin-bottom: 20rem;
+  }
+  .uiux {
+    overflow-y: auto;
+  }
+  .uiux .main-container {
+    flex-direction: column;
+    margin-top: 6rem;
+  }
+  .uiux_righ .image {
+    margin-top: 3.1rem;
+  }
+  .input {
+    width: 100%;
+  }
+  .uiux_lef .textarea {
+    width: 100% !important;
+  }
+  .parent_input .inputt_1:last-of-type .input {
+    width: 100% ;
+  }
+}
+@media screen and (max-width: 700px) {
+  .uiux_righ h3 {
+    font-size: 35px;
+  }
+  .uiux_righ .image {
+    margin-top: 3rem;
+  }
+  .uiux_lef h3 {
+    white-space: wrap;
+  }
+
+  .uiux_righ .image div:last-of-type {
+    margin-right: 0rem;
+    bottom: -79%;
+    right: 20%;
+   }
+   .uiux_righ .image div:first-of-type  {
+    bottom: -39%;
+    right: 20%;
+  }
+}
+@media screen and (max-width: 530px) {
+  .uiux_righ h3 {
+    font-size: 30px;
+  }
+  .uiux_righ .image {
+    margin-top: 2rem;
+  }
+  .uiux_righ p {
+    font-size: 10px;
+    margin-top: 15px;
+  }
+  .uiux_righ .image div {
+    gap: 1rem;
+    padding: 0px 0 0 22px;
+  }
+  .uiux_righ .image {
+    margin-bottom: 15rem;
+  }
+  .uiux_righ .image div span {
+    border: 4px solid white;
+    padding: 1px;
+  }
+  .arrow_right {
+    padding: 1px;
+  }
+}
+@media screen and (max-width: 444px) {
+
+  .uiux_righ .image {
+    margin-top: 2rem;
+  }
+  .uiux_righ p {
+    font-size: 10px;
+    margin-top: 15px;
+  }
+  .uiux_righ .image div {
+    gap: 1rem;
+    padding: 0px 0 0 22px;
+    bottom: -30%;
+  }
+  .uiux_righ .image {
+    margin-bottom: 13rem;
+  }
+
+  .uiux_righ .image div:last-of-type {
+    margin-right: 0rem;
+    bottom: -95%;
+    right: 20%;
+   }
+   .uiux_righ .image div:first-of-type  {
+    bottom: -43%;
+    right: 20%;
+  }
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 700px)  {
+  /*  .uiux_righ .image {
+    margin-top: 3rem;
+   } */
+}
+
+@media screen and (max-width: 600px) {
+   /* .uiux_righ .image {
+    margin-bottom: -1rem !important;
+   } */
+}
+
+@media screen and (max-width: 630px) {
+  .uiux_lef h3 {
+    font-size: 30px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+   .uiux_righ .image {
+    margin-top: 3rem;
+   }
+}
+
+
+.parent_ttopp_fformm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.pparen_bbuttonsss {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.parent_ttopp_fformm button {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 10px;
+  font-family: Montserrat;
+  font-weight: 500;
+  width: 80px;
+  height: 40px;
+  color: white ;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #41CBBF ;
+}
+.parent_ttopp_fformm .ccontactt_uttonn {
+  background: #41CBBF ;
+}
+.parent_ttopp_fformm .ssendd_uttonn {
+  background: #D9D9D9;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 992px) {
+  .parent_ttopp_fformm button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .uiux_lef h3 {
+    font-size: 21px !important;
+  }
+  .parent_ttopp_fformm {
+    gap: 0.7rem;
+  }
+  .pparen_bbuttonsss {
+    gap: 0.4rem;
+  }
+}

@@ -1,0 +1,88 @@
+
+.ourinitialll {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.ourinitialll .background-img {
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+
+.ourinitialll h1 {
+  color: #fff;
+  font-size: 60px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: start;
+  margin-top: 8rem;
+}
+
+.ourinitialll h1 span {
+  white-space: nowrap;
+}
+
+.ourinitialll .main-container button {
+  color: #fff;
+  background: transparent;
+  padding: 7px 30px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  position: absolute;
+  bottom: 5rem;
+  right: 106px;
+}
+
+
+@media (max-width: 992px) {
+  .ourinitialll .main-container button {
+    right: 53px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ourinitialll .main-container button {
+    display: none;
+  }
+  .ourinitialll h1 {
+    margin-top: 8rem !important;
+  }
+  .ourinitialll h1 span:first-of-type {
+    display: none;
+  }
+}
+
+
+
+
+@media (max-width:800px) {
+  .ourinitialll h1 {
+    font-size: 50px;;
+  }
+}
+@media (max-width:600px) {
+  .ourinitialll h1 {
+    font-size: 45px;;
+  }
+
+  .ourinitialll .main-container button {
+    padding: 7px 20px;
+  }
+}
+@media (max-width:480px) {
+  .ourinitialll h1 {
+    font-size: 37px;;
+  }
+  .ourinitialll .main-container button {
+    padding: 7px 17px;
+  }
+}

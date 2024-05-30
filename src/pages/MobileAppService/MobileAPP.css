@@ -1,0 +1,380 @@
+.uiux {
+  min-height: 100vh;
+  padding-top: 3rem;
+
+  overflow: hidden;
+  width: 100vw;
+}
+.uiux .main-container {
+  display: flex;
+  justify-content: space-between;
+  min-height: 100vh;
+  z-index: 2;
+  align-items: center;
+}
+.uiux_lefttt,
+.uiux_righttt {
+  flex: 1;
+}
+.uiux_lefttt h3 {
+  color: white;
+  font-size: 40px;
+  font-style: italic;
+  font-weight: 400;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+.inputt_1 {
+  display: flex;
+  flex-direction: column;
+  margin: 14px 0;
+}
+
+.inputt_1 label {
+  color: #ffffff;
+  font-size: 17px;
+  padding-bottom: 7px;
+}
+
+.input {
+  padding: 10px;
+  background: #A2A2A240;;
+  border-radius: 8px;
+  border: 1px solid white;
+  width: 40%;
+  color: #fffcfc;
+}
+.input::placeholder {
+  color: #fffcfcb3;
+}
+.parent_input {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.parent_input .inputt_1:first-of-type .input {
+  width: 100% !important;
+}
+.parent_input .inputt_1:last-of-type .input {
+  width: 88% ;
+}
+.uiux_lefttt .textarea {
+  padding: 10px 15px;
+  background: #A2A2A240;;
+  border-radius: 8px;
+  border: 1px solid white;
+  color: #fffcfc;
+  width: 75% !important;
+  min-height: 150px;
+}
+.uiux_lefttt .textarea::placeholder {
+  color: #fffcfcb3;
+}
+
+.uiux_righttt p {
+  font-size: 12px;
+  margin-top: 10px;
+  font-weight: 700;
+ }
+.uiux_righttt .image {
+  position: relative;
+
+ }
+ .uiux_righttt .image div:first-of-type {
+  position: absolute;
+  bottom: -17%;
+  right: 1% !important;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #B8B8B8;
+  padding: 0px 0 0 25px;
+  border-radius: 50px;
+ }
+ .uiux_righttt .image div span {
+  background: #000000;
+   border: 5px solid white;
+   padding: 10px;
+   border-radius: 50%;
+ }
+.uiux_righttt img {
+  max-width: 100%;
+  display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.arrow_right {
+ padding: 20px;
+}
+.uiux_righttt .image div p {
+  white-space: nowrap;
+    cursor: pointer;
+    color: #ffffff;
+ }
+
+
+ 
+ .uiux_righttt .image div:last-of-type {
+  position: absolute;
+  bottom: -17%;
+  right: 1%;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  background: #41CBBF;
+  padding: 0px 0 0 25px;
+  border-radius: 50px;
+  margin-right: 24rem;
+ }
+
+ .uiux_righttt .image  .BsLightningFill {
+  color: #41CBBF;
+  font-size: 54px;
+}
+.uiux_righttt .image .MdKeyboardArrowRight {
+  font-size: 54px;
+}
+
+
+
+
+/* responsive */
+
+@media screen and (max-width: 1100px) {
+  .uiux_righttt .image div:last-of-type {
+    bottom: -60%;
+    margin-right: 0rem;
+    right: 1%;
+   }
+   .uiux_righttt .image div:first-of-type  {
+    bottom: -30%;
+  }
+}
+
+
+@media screen and (max-width: 992px) {
+
+  .uiux_righttt .image  {
+    margin-bottom: 1rem !important;
+   }
+
+   .uiux_righttt .image div:first-of-type , 
+   .uiux_righttt .image div:last-of-type {
+    display: none ;
+  }
+  .uiux_lefttt {
+    margin-top: 4rem;
+  }
+
+  .uiux {
+    overflow-y: auto;
+  }
+  .uiux .main-container {
+    flex-direction: column;
+    margin-top: 6rem;
+  }
+  .uiux_righttt .image {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+   }
+   .input {
+    width: 100%;
+  }
+  .uiux_lefttt .textarea {
+    width: 100% !important;
+  }
+  .parent_input .inputt_1:last-of-type .input {
+    width: 100% ;
+  }
+
+
+  .uiux_righttt .image div:last-of-type {
+    bottom: -40%;
+    margin-right: 0rem;
+    right: 5%;
+   }
+   .uiux_righttt .image div:first-of-type  {
+    bottom: -20%;
+    right: 5% !important;
+  }
+  .uiux_righttt .image {
+    margin-bottom: 15rem;
+   }
+
+
+
+}
+@media screen and (max-width: 700px) {
+  .uiux_righttt h3 {
+    font-size: 35px;
+  }
+   .uiux_righttt .image {
+    margin-top: 3rem;
+    margin-bottom: 5rem;
+   }
+   .uiux_lefttt h3 {
+    white-space: wrap;
+  }
+
+
+
+  .uiux_righttt .image div:last-of-type {
+    bottom: -40%;
+    margin-right: 0rem;
+    right: 5%;
+   }
+   .uiux_righttt .image div:first-of-type  {
+    bottom: -20%;
+    right: 5% !important;
+  }
+  .uiux_righttt .image {
+    margin-bottom: 15rem;
+   }
+
+
+
+}
+@media screen and (max-width: 530px) {
+  .uiux_righttt h3 {
+    font-size: 30px;
+  }
+  .uiux_righttt .image {
+    margin-top: 3rem;
+   }
+   .uiux_righttt .image div {
+    bottom: -10%;
+   }
+   .uiux_righttt p {
+    font-size: 10px;
+    margin-top: 15px;
+   }
+   .uiux_righttt .image div {
+    bottom: 1%;
+    right: 30%;
+    gap: 1rem;
+    padding: 0px 0 0 22px;
+   }
+   .uiux_righttt .image div span {
+     border: 4px solid white;
+     padding: 2px;
+   }
+  .arrow_right {
+   padding: 1px;
+  }
+}
+@media screen and (max-width: 444px) {
+  .uiux_righttt .image {
+    margin-top: 3rem;
+   }
+   .uiux_righttt .image div {
+    bottom: -15%;
+   }
+   .uiux_righttt .image {
+    margin-bottom: 5.5rem;
+   }
+
+   .uiux_righttt .image div:last-of-type {
+    bottom: -50%;
+    margin-right: 0rem;
+    right: 5%;
+   }
+   .uiux_righttt .image div:first-of-type  {
+    bottom: -25%;
+    right: 5% !important;
+  }
+  .uiux_righttt .image {
+    margin-bottom: 14rem;
+   }
+
+  }
+  @media screen and (max-width: 330px) {
+    .uiux_righttt .image div:last-of-type {
+      bottom: -65%;
+      margin-right: 0rem;
+      right: 5%;
+     }
+     .uiux_righttt .image div:first-of-type  {
+      bottom: -30%;
+      right: 5% !important;
+    }
+  }
+
+
+
+  
+
+@media screen and (max-width: 700px)  {
+  .uiux_righttt .image {
+    margin-top: 3rem;
+   }
+}
+
+@media screen and (max-width: 600px) {
+  .uiux_righttt .image {
+    margin-bottom: -1rem !important;
+   }
+}
+
+@media screen and (max-width: 630px) {
+  .uiux_lefttt h3 {
+    font-size: 30px !important;
+  }
+}
+@media screen and (max-width: 500px) {
+  .uiux_righttt .image {
+    margin-top: 3rem;
+   }
+}
+
+
+.parent_op_ormm {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.paren_uttonsss {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.parent_op_ormm button {
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 10px;
+  font-family: Montserrat;
+  font-weight: 500;
+  width: 80px;
+  height: 40px;
+  color: white ;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  background: #41CBBF ;
+}
+.parent_op_ormm .contac_uttonn {
+  background: #41CBBF ;
+}
+.parent_op_ormm .sen_uttonn {
+  background: #D9D9D9;
+  font-size: 15px;
+}
+
+@media screen and (min-width: 992px) {
+  .parent_op_ormm button {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .uiux_lefttt h3 {
+    font-size: 23px !important;
+  }
+  .parent_op_ormm {
+    gap: 0.7rem;
+  }
+  .paren_uttonsss {
+    gap: 0.4rem;
+  }
+}
